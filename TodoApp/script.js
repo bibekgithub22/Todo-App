@@ -80,7 +80,7 @@ gsap.from("#github",{
     trigger: ".icons",
     start: "top 80%",
     end: "bottom 95%",
-    scrub:1,
+    scrub:0,
     // markers:true,
 }
 })
@@ -98,7 +98,7 @@ gsap.from("#insta",{
     trigger: ".icons",
     start: "top 80%",
     end: "bottom 95%",
-    scrub:1,
+    scrub:0,
     // markers:true,
 }
 })
@@ -115,7 +115,7 @@ gsap.from("#linkedin",{
     trigger: ".icons",
     start: "top 80%",
     end: "bottom 95%",
-    scrub:1,
+    scrub:0,
     // markers:true,
 }
 })
