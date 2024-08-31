@@ -36,16 +36,16 @@ gsap.from(".cont", {
   y:40,
   opacity: 0,
   delay: 0.5,
-  duration: 1.5,
+  duration: 1,
   scale:1.03,
 })
 
   
 
 gsap.from("#logo",{
-  x:  40,
+  y: -40,
   opacity: 0,
-  delay:1.5,
+  delay:1,
   duration: 1.2,
 })
 
@@ -61,7 +61,7 @@ gsap.from(".footer-head",{
     trigger: ".footer-head h2",
     start: "top 80%",
     end: "bottom 70%",
-    scrub:1,
+    // scrub:1,
     // markers:true,
 }
 
@@ -71,16 +71,17 @@ gsap.from(".footer-head",{
 gsap.from("#github",{
   x:  -400,
   opacity: 0,
-  delay:1.5,
-  duration: 1.2,
+  delay:0.8,
+  duration: 1,
   rotate:180,
+  ease: "power3.out", 
 
   scrollTrigger: {
     scroller: "body",
-    trigger: ".icons",
-    start: "top 80%",
-    end: "bottom 95%",
-    scrub:1,
+    trigger: ".footer-head h2",
+    start: "top 85%",
+    end: "bottom 70%",
+    // scrub:1,
     // markers:true,
 }
 })
@@ -89,16 +90,16 @@ gsap.from("#github",{
 gsap.from("#insta",{
   x:  400,
   opacity: 0,
-  delay:1.5,
-  duration: 1.2,
+  delay:0.8,
+  duration: 1,
   rotate:180,
-
+  ease: "power3.out",
   scrollTrigger: {
     scroller: "body",
-    trigger: ".icons",
-    start: "top 80%",
-    end: "bottom 95%",
-    scrub:1,
+    trigger: ".footer-head h2",
+    start: "top 85%",
+    end: "bottom 70%",
+    // scrub:1,
     // markers:true,
 }
 })
@@ -106,16 +107,16 @@ gsap.from("#insta",{
 gsap.from("#linkedin",{
   y:  80,
   opacity: 0,
-  delay:1.5,
-  duration: 1.2,
+  delay:0.8,
+  duration: 1,
   rotate:180,
-
+  ease: "power3.out",
   scrollTrigger: {
     scroller: "body",
-    trigger: ".icons",
-    start: "top 80%",
-    end: "bottom 95%",
-    scrub:1,
+    trigger: ".footer-head h2",
+    start: "top 85%",
+    end: "bottom 70%",
+    // scrub:1,
     // markers:true,
 }
 })
