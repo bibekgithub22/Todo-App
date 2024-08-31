@@ -222,7 +222,8 @@ body {
 }
 .copyright{
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  padding-left: 2rem;
 }
 
 @media screen and (max-width: 450px) {
