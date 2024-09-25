@@ -2,8 +2,8 @@ let ctr = 1;
 
 function delEvent(ctr) {
   target = document.getElementById("todo-" + ctr);
-  // target.parentNode.removeChild(target);   //much compicated way but better flow
-  target.remove();   //both ways
+  // target.parentNode.removeChild(target);   //<--- more complicated way, but better flow --->
+  target.remove(); //easy way (inbuilt func) works both ways
 }
 
 function addEvent() {
@@ -21,40 +21,35 @@ function addEvent() {
     target.parentNode.appendChild(newEl);
     ctr = ctr + 1;
 
-    document.querySelector('.input').value="" //clears/resets the ".input".value every time u press the button
-
+    document.querySelector(".input").value = ""; //clears/resets the ".input".value every time u press the button
   }
-
+  if(value==""){
+    alert("Please enter a To-Do!")
+  }
 }
 
 
 
 
-
-//GSAP --->
+// GSAP --->
 gsap.from(".cont", {
-  y:40,
+  y: 40,
   opacity: 0,
   delay: 0.5,
   duration: 1,
-  scale:1.03,
-})
+  scale: 1.03,
+});
 
-  
-
-gsap.from("#logo",{
+gsap.from("#logo", {
   y: -40,
   opacity: 0,
-  delay:1,
+  delay: 1,
   duration: 1.2,
-})
+});
 
-
-gsap.from(".footer-head",{
+gsap.from(".footer-head", {
   y: -20,
-  opacity:0,
-
-  
+  opacity: 0,
 
   scrollTrigger: {
     scroller: "body",
@@ -63,18 +58,16 @@ gsap.from(".footer-head",{
     end: "bottom 70%",
     // scrub:1,
     // markers:true,
-}
+  },
+});
 
-
-})
-
-gsap.from("#github",{
-  x:  -400,
+gsap.from("#github", {
+  x: -400,
   opacity: 0,
-  delay:0.8,
+  delay: 0.8,
   duration: 1,
-  rotate:180,
-  ease: "power3.out", 
+  rotate: 180,
+  ease: "power3.out",
 
   scrollTrigger: {
     scroller: "body",
@@ -83,16 +76,15 @@ gsap.from("#github",{
     end: "bottom 70%",
     // scrub:1,
     // markers:true,
-}
-})
+  },
+});
 
-
-gsap.from("#insta",{
-  x:  400,
+gsap.from("#insta", {
+  x: 400,
   opacity: 0,
-  delay:0.8,
+  delay: 0.8,
   duration: 1,
-  rotate:180,
+  rotate: 180,
   ease: "power3.out",
   scrollTrigger: {
     scroller: "body",
@@ -101,15 +93,15 @@ gsap.from("#insta",{
     end: "bottom 70%",
     // scrub:1,
     // markers:true,
-}
-})
+  },
+});
 
-gsap.from("#linkedin",{
-  y:  80,
+gsap.from("#linkedin", {
+  y: 80,
   opacity: 0,
-  delay:0.8,
+  delay: 0.8,
   duration: 1,
-  rotate:180,
+  rotate: 180,
   ease: "power3.out",
   scrollTrigger: {
     scroller: "body",
@@ -118,6 +110,5 @@ gsap.from("#linkedin",{
     end: "bottom 70%",
     // scrub:1,
     // markers:true,
-}
-})
-
+  },
+});

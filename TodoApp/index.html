@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- body -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Todo</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<!-- body -->
+  <body>
+    <section>
+      <h1 id="logo">Todo.App</h1>
+      <div class="main">
+        <div class="cont">
+          <p class="title">TODO APPLICATION</p>
+          <p class="h4">Enter Your To-Do's</p>
 
-<body>
-  <div class="page1">
-    <h1 id="logo">Todo.App</h1>
-    <div class="main">
-      <div class="cont">
-        <p class="title">TODO APPLICATION</p>
-        <p class="h4">Enter Your To-Do's</p>
-
-        <div class="task">
-          <input class="input" type="text" placeholder="Give me a task." />
-          <button onclick="addEvent()" id="add-btn">Add</button>
-        </div>
-        <div class="output">
-          <p class="output-child"></p>
+          <div class="task">
+            <input class="input" type="text" placeholder="Give me a task." />
+            <button onclick="addEvent()" id="add-btn">Add</button>
+          </div>
+          <div class="output">
+            <p class="output-child"></p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div id="footer">
-    <div class="footer-head">
-      <h2>My Socials</h2>
+    <div id="footer">
+      <div class="footer-head">
+        <h2>My Socials</h2>
+      </div>
+
+      <div class="icons">
+        <a href="https://github.com/bibekgithub22" target="”_blank”"
+          ><img src="/images/git.svg" id="github" alt="github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/bibek-biswas-7b7a2b2b3"
+          target="”_blank” "
+          ><img src="/images/linkedin.svg" id="linkedin" alt="github"
+        /></a>
+        <a href="https://www.instagram.com/preeds_fps/?hl=en" target="”_blank” "
+          ><img src="/images/insta.svg" id="insta" alt="github"
+        /></a>
+      </div>
+      <div class="copyright">
+        <p>
+          <a
+            href="https://github.com/bibekgithub22"
+            style="color: rgb(120, 120, 255)"
+            target="”_blank” "
+            >&#169; bibek_biswas</a
+          >
+        </p>
+      </div>
     </div>
 
-    <div class="icons">
-      <a href="https://github.com/bibekgithub22" target="”_blank”"><img src="/images/git.svg" id="github" alt="github" /></a>
-      <a href="https://www.linkedin.com/in/bibek-biswas-7b7a2b2b3" target="”_blank” "><img src="/images/linkedin.svg" id="linkedin" alt="github" /></a>
-      <a href="https://www.instagram.com/preeds_fps/?hl=en" target="”_blank” "><img src="/images/insta.svg" id="insta" alt="github" /></a>
-    </div>
-    <div class="copyright">
-    
-        <p>&#169; bibek biswas</p>
-  
-    </div>
-  </div>
-
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="script.js"></script>
-</body>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
