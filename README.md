@@ -1,6 +1,6 @@
 # Todo App
 
-Deployment link <a>https://todo-app-js-git-main-bibek-biswas-projects.vercel.app/ </a>
+Deployment link <a>https://todo-app-js-git-main-bibek-biswas-projects.vercel.app/ 
 
 ## Description
 
